@@ -36,19 +36,19 @@
 >
 > - CanActivateChild: Controla si se pueden activar los hijos de una ruta.
 >
-> - CanLoad: Controla si una ruta puede incluso cargarse. Esto se vuelve útil para los módulos de funciones que tienen carga diferida. Ni siquiera se cargarán si el guardia devuelve falso.
+> - CanLoad: Controla si una ruta puede incluso cargarse. Esto se vuelve útil para los módulos de funciones que tienen carga diferida. Ni siquiera se cargarán si el guard devuelve falso.
 >
-> - CanDeactivate: Controla si el usuario puede salir de una ruta. Tenga en cuenta que esta protección no impide que el usuario cierre la pestaña del navegador o navegue a una dirección diferente. Solo evita acciones desde la propia aplicación.
+> - CanDeactivate: Controla si el usuario puede salir de una ruta. Esta protección no impide que el usuario cierre la pestaña del navegador o navegue a una dirección diferente. Solo evita acciones desde la propia aplicación.
 >
 > #### e) ¿Qué es la carga Lazy de los módulos de Angular? ¿Cómo se configura en Angular la carga Lazy? ( https://angular.io/guide/lazy-loading-ngmodules )
 >
 > De forma predeterminada, los NgModules se cargan rapidamente, lo que significa que tan pronto como se carga la aplicación, también lo hacen todos los NgModules, sean o no inmediatamente necesarios. Para aplicaciones grandes con muchas rutas, es bueno utilizar la carga lazy o lazy loading, un patrón de diseño que carga NgModules según sea necesario. El lazy loading ayuda a mantener los tamaños de paquetes iniciales más pequeños, lo que a su vez ayuda a reducir los tiempos de carga.
 >
-> Hay dos pasos principales para configurar un módulo de carga diferida:
+> Hay dos pasos principales para configurar un módulo con carga diferida:
 >
-> - 1. En los archivos RoutingModule de los distintos módulos añadir la ruta al componente.
+> 1. En los archivos RoutingModule de los distintos módulos añadir la ruta al componente.
 >
-> - 2. Dentro del archivo AppRoutingModule, usar loadChildren (en lugar de componente) para configurar las rutas a los distintos módulos de la aplicación.
+> 2. Dentro del archivo AppRoutingModule, usar loadChildren (en lugar de componente) para configurar las rutas a los distintos módulos de la aplicación.
 >
 > #### f) ¿Qué es/para qué son útiles los middlewares en el contexto de node.js? ¿Dónde estás usando middlewares en nuestra aplicación?
 >
