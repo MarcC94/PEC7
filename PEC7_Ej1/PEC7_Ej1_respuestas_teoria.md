@@ -1,12 +1,12 @@
 > ### PEC7_Ej1
 >
-> #### a) ¿Qué es y cómo funciona el elemento <RouterOutlet>?
+> #### a) ¿Qué es y cómo funciona el elemento RouterOutlet?
 >
 > RouterOutlet es una etiqueta especial en Angular que sirve para mostrar los componentes hijos de un componente. Por defecto todos los componentes son hijos del componente AppComponent, por lo que si incluímos esta etiqueta dentro de la vista de AppComponent, se renderizará cada uno de los componentes del routing dependiendo de la página en la que nos encontremos.
 >
 > #### b) ¿Para qué se utilizan las directivas routerLink y routerLinkActive? ¿Existen más directivas relacionadas con el router?
 >
-> RouterLink: Cuando se aplica a un elemento en una plantilla, convierte ese elemento en un enlace que inicia la navegación a una ruta. La navegación abre uno o más componentes enrutados en una o más ubicaciones <router-outlet> en la página.
+> RouterLink: Cuando se aplica a un elemento en una plantilla, convierte ese elemento en un enlace que inicia la navegación a una ruta. La navegación abre uno o más componentes enrutados en una o más ubicaciones router-outlet en la página.
 >
 > RouterLinkActive: Realiza un seguimiento de si la ruta vinculada de un elemento está actualmente activa y le permite especificar una o más clases de CSS para agregar al elemento cuando la ruta vinculada está activa.
 >

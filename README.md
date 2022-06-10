@@ -6,7 +6,7 @@
 >
 >### Descripción realización PEC:
 >
-> PEC6_Ej1
+> PEC7_Ej1
 >
 > - Respuesta teoria ejercicio 1 en "PEC7_Ej1_respuestas_teoria.md".
 >
