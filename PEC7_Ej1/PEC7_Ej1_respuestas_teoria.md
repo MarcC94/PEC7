@@ -56,7 +56,7 @@
 >
 > Ejemplo de funcion middleware:
 >
-> - Middleware de autenticación
+> - Middleware de autenticación:
 Supongamos que tenemos cinco rutas getUsers,getDetails,updateDetails,isLoggedIn,isLoggedOut. Cada ruta debe autenticarse si el usuario no está autenticado, entonces no puede llamar a las rutas mencionadas anteriormente, por lo que cada llamada GET, POST requiere autenticación. En este caso, creamos un middleware de autenticación.
 >
 > Este ejemplo sería a nivel de aplicación, pero tenemos middlewares tambien a nivel de router, manejo de errores, o middlewares de terceros.
